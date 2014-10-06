@@ -8,6 +8,7 @@
   * MySQL
   * PhpMyAdmin
   * Git
+  * Mcrypt
 
 ## Key Notes
   * Webroot : /var/www
