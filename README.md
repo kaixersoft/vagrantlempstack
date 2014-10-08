@@ -6,6 +6,8 @@
 #### Clone this repo
  ```
    git clone https://github.com/kaixersoft/vagrantlempstack.git
+   cd vagrantlempstack
+   vagrant up
  ```
 
 #### Working project folder ( web root )
