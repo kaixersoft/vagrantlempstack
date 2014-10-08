@@ -16,6 +16,7 @@
    * Start working on your project (php,html)
    * Access your project url via : http://10.10.10.10/my_project/index.php
    * When your done, you can make your project folder a local git repo as well
+ 
  ```
   git init
   git add --all
