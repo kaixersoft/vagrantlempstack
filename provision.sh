@@ -78,7 +78,9 @@ server {
     rewrite ^/* /phpmyadmin last;
   }
   ### phpMyAdmin ###
-
+  
+  # Bug fix for that weird characters appearing on your files after modification from the host
+  sendfile off;
 }
 EOF
 
