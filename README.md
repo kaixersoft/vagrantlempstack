@@ -68,4 +68,32 @@
   * Dev Team uses the same environment
   * Quick and fast way to get LEMP stack on your machine
 
-
+## Install Laravel 5 on your vagrant box
+ * Logon to your vagrant box via ssh
+  ```
+  vagrant ssh
+  ```
+ ##Follow instructions :
+ * Update APT
+ ```
+ sudo apt-get update
+  ```
+ * Install PHP Cli
+  ```
+ sudo apt-get install php5-cli
+  ```
+ * Install GIT
+  ```
+ sudo apt-get install git
+  ```
+ * Install composer globally
+  ```
+ curl -sS https://getcomposer.org/installer | php
+ sudo mv composer.phar /usr/local/bin/composer
+  ```
+ * Install Laravel 5 via composer
+  ```
+ cd /var/www
+ composer create-project laravel/laravel --prefer-dist
+  ```  
+  * Make sure you update nginx vhost to point to /var/www/laravel/public
