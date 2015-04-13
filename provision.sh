@@ -92,6 +92,23 @@ mysql -u root -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY
 # Activate Mcrypt
 sudo php5enmod mcrypt
 
+
+# Install PHP cli
+sudo apt-get install php5-cli 
+
+# Install Git
+sudo apt-get install git
+
+# Install Composer
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer 
+
+
+
+
+
+
+
 # Restart Services
 sudo service mysql restart
 sudo service nginx restart
