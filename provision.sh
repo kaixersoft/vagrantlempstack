@@ -14,7 +14,7 @@ sudo aptitude install -q -y -f mysql-server mysql-client nginx php5-fpm
 sudo aptitude install -q -y -f php5-mysql php5-curl php5-gd php5-mcrypt
 
 # Install and configure PhpMyAdmin
-sudo aptitude install -q -y -f phpmyadmin
+sudo aptitude install -q -y -f phpmyadmin php5-cli git
 
 #create /var/www
 sudo mkdir /var/www
@@ -92,16 +92,10 @@ mysql -u root -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY
 # Activate Mcrypt
 sudo php5enmod mcrypt
 
-
-# Install PHP cli
-sudo apt-get install php5-cli 
-
-# Install Git
-sudo apt-get install git
-
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer 
+sudo chmod +x /usr/local/bin/composer
 
 
 
